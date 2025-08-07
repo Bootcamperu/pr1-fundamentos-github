@@ -1,4 +1,4 @@
-name: 02-Evento Issue - Ejecutando Trigger Interno -501
+name: 02-Evento Issue - Ejecutando Trigger Interno -502
 # Trigger
 on:
   push:
