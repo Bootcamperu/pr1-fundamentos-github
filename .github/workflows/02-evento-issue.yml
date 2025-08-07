@@ -1,4 +1,4 @@
-name: 02-Evento Issue - Prueba
+name: 02-Evento Issue
 # Trigger
 on:
   push:
