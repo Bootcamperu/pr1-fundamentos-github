@@ -1,4 +1,4 @@
-name: 02-Evento Issue
+name: 02-Evento Issue - Se readme
 # Trigger
 on:
   push:
