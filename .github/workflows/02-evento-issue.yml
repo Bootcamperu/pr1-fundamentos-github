@@ -1,4 +1,4 @@
-name: 02-Evento Issue - Se readme
+name: 02-Evento Issue - Ejecutando Trigger Interno
 # Trigger
 on:
   push:
