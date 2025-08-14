@@ -1,4 +1,4 @@
-name: 07-Contextos
+name: 07-Contextos usos
 on:
   push:
     branches: [ "main" ]
