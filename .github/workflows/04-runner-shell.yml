@@ -1,4 +1,4 @@
-name: 04a - Distintas shells
+name: 04 - Distintas shells
 on:
   push:
     branches: [ "main" ]
