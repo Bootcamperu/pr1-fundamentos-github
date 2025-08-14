@@ -1,4 +1,4 @@
-name: 05-Instalar Paquetes -T
+name: 05-Instalar Paquetes
 on:
   push:
     branches: [ "main" ]
