@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       # Desactivamos fail-fast:  Para evitar que si falla un step se pare
-      fail-fast: true
+      fail-fast: false
       matrix:
         os: [ubuntu-22.04, ubuntu-20.04]
         version: [18, 20]
@@ -21,9 +21,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.version }}
-        # Provocamos un error para la version de ubuntu 22.04 y node 20
+         # Provocamos un error para la version de ubuntu 22.04 y node 20
+      - if: matrix.os == 'ubuntu-22.04' && matrix.version == 20
+        run: exit 1
         # continue-on-error :Si existe un falla sigue con el despliegue
-        continue-on-error: false
+        continue-on-error: true
       - run: npm ci
       - run: npm test
   deploy:
