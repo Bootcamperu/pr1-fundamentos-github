@@ -21,9 +21,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.version }}
-         # Provocamos un error para la version de ubuntu 22.04 y node 20
-      - if: matrix.os == 'ubuntu-22.04' && matrix.version == 20
-        run: exit 1
+        # Provocamos un error para la version de ubuntu 22.04 y node 20
         # continue-on-error :Si existe un falla sigue con el despliegue
         continue-on-error: false
       - run: npm ci
