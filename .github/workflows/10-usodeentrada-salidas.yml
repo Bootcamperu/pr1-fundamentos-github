@@ -20,7 +20,7 @@ jobs:
         run: echo "Hay ${{inputs.numero-dados}} dados"
       - name: Generar Dado 1
         id: dado1
-        run: echo "dado1=$((1 + RANDOM % 6))" >> | tee -a "$GITHUB_OUTPUT"
+        run: echo "dado1=$((1 + RANDOM % 6))" | tee -a "$GITHUB_OUTPUT"
         shell: bash
       - name: Generar Dado 2
         if: ${{ inputs.numero-dados == 'dos' }}  
