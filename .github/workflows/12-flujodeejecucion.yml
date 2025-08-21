@@ -9,7 +9,7 @@ jobs:
       # Desactivamos fail-fast:  Para evitar que si falla un step se pare
       fail-fast: true
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
+        os: [ubuntu-22.04, ubuntu-20.04]
         version: [18, 20]
         # exclude:
         # - os: ubuntu-22.04
