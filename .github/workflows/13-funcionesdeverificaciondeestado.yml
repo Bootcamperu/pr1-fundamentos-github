@@ -1,4 +1,4 @@
-name: 13 - Control de flujo - funcioness
+name: 13 - Control de flujo - funciones
 on:
   push:
     branches: [ "main" ]
