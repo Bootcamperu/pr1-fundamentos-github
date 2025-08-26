@@ -1,4 +1,4 @@
-name: 15 - artefactos
+name: 15 - artefactos 2025
 on:
   push:
     branches: [ "main" ]
