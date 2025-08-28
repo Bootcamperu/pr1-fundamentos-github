@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          title="${{ github.event.issues.title }} "
+          title="${{ github.event.issue.title }} "
           echo ${ISSUE_TITLE}
           
