@@ -1,4 +1,4 @@
-name: 19 - Github token
+name: 19 - Github token - 2025
 on:
   push:
     branches: [ "main" ]
